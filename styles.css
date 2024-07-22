@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #4d5155;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .logo img {
+    width: 150px;
+    height: auto;
+    background: transparent;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
+    color: white;
+}
+
+/* Banner Styles */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+/* Section Styles */
+.services, .about, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.horizontal-line {
+    border-bottom: 2px solid #ffae00;
+    height: 2px;
+}
+
+/* Services Section Styles */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: bold;    
+}
+
+.service-item {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid black;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666666;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* About Section Styles */
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        margin: 0;
+    }
+
+    .about-text {
+        margin-bottom: 20px;
+    }
+}
+
+/* contact us */
+/* Contact Section Styles */
+.contact {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    
+    
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
